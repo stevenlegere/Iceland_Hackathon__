@@ -11,8 +11,8 @@ const SmoothieCard = ( { smoothie }) => {
             <img src={smoothie.image} alt="Smoothie" className='smoothie-image' />
             <h3>{smoothie.title}</h3>
             <p>{smoothie.allergens}</p>
-            <p>{smoothie.ingredients}</p>
             <div className="rating">{smoothie.rating}</div>
+            <button className="add_to_cart"> Add to cart</button>
         </div>
     )
 }

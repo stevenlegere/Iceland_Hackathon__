@@ -11,7 +11,7 @@ const App = () => {
   const [smoothies, setSmoothies] = useState(null);
   const [selectedAllergens, setSelectedAllergens] = useState([]);
 
-  console.log(smoothies);
+  // console.log(smoothies);
   // Function to handle allergen selection and filtering
   const handleAllergensChange = (allergen) => {
     // console.log("hey");
@@ -29,7 +29,7 @@ const App = () => {
       if (error) {
         setFetchError('Could not fetch the smoothies');
         setSmoothies(null);
-        console.log(error);
+        // console.log(error);
       }
       if (data) {
         setSmoothies(data);
@@ -43,13 +43,13 @@ const App = () => {
   // Render the App component with smoothie data and allergen filter
   return (
     <div className="App">
-    <div className="header">SMOOTH OPERATOR</div>
+    <div className="header">🥤 SMOOTH OPERATOR 🥤</div>
       {fetchError && <p>{fetchError}</p>}
       {smoothies && (
         <div className="smoothies">
           {/* Add checkboxes for each allergen */}
           <div className="allergen-filter">
-          <h1 className="title">Filter by allergy</h1>
+          <h1 className="title">Filter by allergen</h1>
             {['gluten', 'nuts', 'peanuts', 'milk', 'soy', 'egg', 'sesame'].map((allergen) => {
               const prefixedAllergen = `no ${allergen}`;
               {/* console.log(selectedAllergens); */}
