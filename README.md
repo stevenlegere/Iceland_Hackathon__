@@ -1,6 +1,7 @@
 # Iceland_Hackathon
 
-### Allergy-Friendly Product Finder Challenge: Iceland Foods Hackathon
+### Allergy-Friendly Product Finder Challenge: Iceland Foods Hackathon in four hours
+[icelandhackathon](https://icelandhackathon.netlify.app/)
 # Introduction
 Welcome to my Allergy-Friendly Product Finder challenge for the Iceland Foods Hackathon! We built an app, focused on smoothies with the main functionality of an allergy filter.
 
